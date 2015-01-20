@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html>
+
+<link rel="stylesheet" href="styles.css">
+
+<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
 <head>
+
   <title>Myapp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
 </head>
+
+<style>
+
+  h1 {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    padding:4.5px;
+    margin:1.5px;
+    }
+
+  h2 {
+    text-align: left;
+    color: yellow;
+    font-family: Georgia;
+    
+    }
+
+</style>
+
+<h1>Terrance Mortimer Portfolio</h1>
+
+<body>
+
+
+
+<style>
+
+  body {
+    text-align: left;
+    background: blue;
+    color: white;
+    font-family: Georgia;
+    padding-top: 70px; 
+    }
+    
+ </style>
+
 <body>
 
 <% if notice %>
@@ -19,4 +71,5 @@
 <%= yield %>
 
 </body>
+
 </html>

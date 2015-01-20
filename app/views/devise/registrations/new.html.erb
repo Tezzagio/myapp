@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+
+<style>
+
+h2 {
+    text-align: center;
+    color: green;
+    font-family: Georgia;
+    border:1px solid black;
+
+}
+
+</style>
+
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -13,17 +27,29 @@
     <% if @validatable %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <%= f.password_field :password, autocomplete: "on" %>
   </div>
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    <%= f.password_field :password_confirmation, autocomplete: "on" %>
   </div>
 
   <div class="actions">
+
+    <style>
+
+  body {
+    color: green;
+    font-family: helvetica;
+    }
+    
+  </style>
+
     <%= f.submit "Sign up" %>
+
   </div>
+
 <% end %>
 
 <%= render "devise/shared/links" %>

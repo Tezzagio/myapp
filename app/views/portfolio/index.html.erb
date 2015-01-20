@@ -1,2 +1,89 @@
-<h1>Portfolio#index</h1>
-<p>Find me in app/views/portfolio/index.html.erb</p>
+<!DOCTYPE html>
+
+
+<head>
+
+<title>Protfolio Links</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<style>
+
+  body {
+    text-align: left;
+    background: blue;
+    color: white;
+    font-family: Georgia;
+    }
+    
+
+  h1 {
+    text-align: center;
+    color: white;
+    font-family: Georgia;
+    }
+
+  h2 {
+    text-align: left;
+    color: yellow;
+    font-family: Georgia;
+    padding:1.5px;
+    margin:1.5px;
+    }
+
+    
+</style>
+
+
+<body>
+
+<div class="container">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://192.168.33.10:3000/">Portfolio</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="https://drive.google.com/folderview?id=0B8xBr_BEfYCLSXZhVEVfSEp6Tmc&usp=sharing"> Interaction Design<span class="sr-only">(current)</span></a></li>
+              <li><a href="https://floating-citadel-8222.herokuapp.com/">Ruby on Rails</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Digital Prototypes<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="http://wp.me/1WOFv">Kungfuforeveryone</a></li>
+                  <li><a href="http://student.city.ac.uk/~abkp211/mmcourseworktm/mmcoursework_file3.html">Bruce Lee homage</a></li>
+                  <li><a href="#">Curriculum Vitae</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#x"></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Other Content<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">More Content</a></li>
+                  <li><a href="#">Sub Content</a></li>
+                  <li><a href="#">Last Content</a></li>
+          
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+</body>
+

@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
-  get 'portfolio/index'
+
+  devise_scope :user do
+  get '/Logout' => 'devise/session#delete', as: 'Logout'
+end
+
+  root 'portfolio#index'
 
   devise_for :users
+
+
+  get '/portfolio' => 'portfolio#IxD'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

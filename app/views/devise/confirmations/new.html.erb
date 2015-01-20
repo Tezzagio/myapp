@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+
+<style>
+
+h2 {
+    text-align: center;
+    color: green;
+    font-family: Georgia;
+    border:1px solid black;
+
+}
+
+</style>
+
 <h2>Resend confirmation instructions</h2>
 
 <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
@@ -9,8 +23,19 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Resend confirmation instructions" %>
-  </div>
-<% end %>
 
+  	<style>
+
+  body {
+    color: green;
+    font-family: Georgia;
+    }
+    
+  </style>
+  
+    <%= f.submit "Resend confirmation instructions" %>
+
+  </div>
+  
+<% end %>
 <%= render "devise/shared/links" %>
